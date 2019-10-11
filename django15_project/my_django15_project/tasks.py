@@ -10,4 +10,5 @@ def email_crontab_schedule():
         message_sent="email.example"
         print("Email is sent to the Worker[{}]".format(message_sent))
     finally:
+        #Release all resources
         print("Resources Released")
